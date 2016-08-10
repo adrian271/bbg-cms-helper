@@ -1,0 +1,5 @@
+label {display:block;clear:both;}
+.copy-text {
+    border: 1px solid black;
+    font-family:monospace;
+}
