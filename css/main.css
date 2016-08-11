@@ -1,5 +1,41 @@
+html,body,div,section {background-color: white;}
+body {font-family: Helvetica, Arial, Sans-serif;}
 label {display:block;clear:both;}
 .copy-text {
     border: 1px solid black;
     font-family:monospace;
+}
+/************/
+/*Global*/
+.col-md-15 {
+    width: 62.5%;
+}
+
+h1 {
+    font-size:36px;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+label {color:blue!important; font-weight: bold;}
+
+input, input[type=text] {
+    width: 50%;
+    background: #fff;
+    height: auto;
+    color: black;
+    display: block;
+    border: 1px solid #cccfd1;
+    margin-bottom: 0px;
+    padding-left: 20px;
+    font-family: "Maison Neue Book",Calibri,Arial,Roboto,sans-serif;
+    font-size: 12px;
+    font-style: normal;
+}
+
+
+/************/
+#Photo-Left-w-text {
+    
 }

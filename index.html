@@ -2,21 +2,58 @@
 <html>
 <head>
     <title>BBG CMS Helper</title>
+    <link rel="stylesheet" href="css/shopping.css" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/dummydata.js"></script>
     <script src="js/main.js"></script>
 </head>
 <body>
-    <section>
+    <!-- <section id="test">
         <label>Title</label>
         <label>Subtitle</label>
         <label>Body</label>
+        <label>image</label>
         <div class="copy-text"></div>
         <div class="live-example"></div>
-        <script>   
-            <a href="#"><h1> {{Title}} </h1></a>
+        <template>   
+            <a href="#"><h1>{{Title}}</h1></a>
             <h2>{{Subtitle}}</h2>
-        </script>
+            <textarea style="background:url({{image}});color:white;width:900px;height:600px;" />{{body}}</textarea>
+        </template>
+    </section> -->
+    <section id="Photo-Left-w-text">
+        <h1>Photo Left with Text</h1>
+        <label>Image</label>
+        <label>Title</label>
+        <label>Secondary_Title</label>
+        <label>Body</label>
+        <label>Call_To_Action_Text</label>
+        <label>Call_To_Action_Link</label>
+        <div class="live-example"></div>
+        <div class="copy-text"></div>
+        <template>
+            <div class="jumbo-feature contained">
+                <div class="row va-container-anchor">
+                    <div class="col-sm-24 col-md-15">
+                        <div class="feat-image">
+                            <img src="{{image}}" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-sm-24 col-md-8 col-md-offset-1 static">
+                        <div class="va-content">
+                            <div class="holder">
+                                <div class="content">
+                                    <h2>{{Title}}</h2><small>{{Secondary_Title}}</small>
+                                    <p>{{Body}}</p>
+                                    <a href="{{Call_To_Action_Link}}" class="btn btn-secondary">{{Call_To_Action_Text}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
     </section>
 </body>
 </html>
