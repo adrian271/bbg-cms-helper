@@ -1,27 +1,16 @@
 $(document).ready(function(){
     var templateEng = function($selection) {
         var template = $selection.find('script').html();
-        console.log(template)
-        var converted = "";
+        var output = template;
         $selection.find('label').each(function(){
-            var inputVal = $(this).find('input').val(); console.log(inputVal);
-            var labelname = $(this).text(); console.log(labelname);
-            var handlebar = '{{'+labelname+'}}'; console.log(handlebar);
-            var handlebarReg = new RegExp(handlebar, "gim"); console.log(handlebarReg);
-            var template = $selection.find('script').html();  console.log(template);
-            converted = template.replace(handlebarReg,inputVal);  console.log(converted);
-            
-            // var template = "{{HE}}LLO";
-            // var inputVal="shit"
-            // var labelname = "he";
-            // var handlebar = '{{'+labelname+'}}';
-            // var handlebarReg = new RegExp(handlebar, "gim");
-            // converted = template.replace(handlebarReg,inputVal);
-            console.log(converted)
+          var replacer = $(this).find('input').val();
+          var word = $(this).text();
+          var regexp = new RegExp("{{"+word+"}}","gim");
+          output = output.replace(regexp,replacer);
         });
-        return converted;
+        return output;
     }
-    
+
     $('label').each(function(){
         var what = $(this).text();
         $(this).append('<input id="'+what+'" type="text">');
