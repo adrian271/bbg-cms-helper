@@ -1,12 +1,16 @@
-html,body,div,section {background-color: white;}
-body {font-family: Helvetica, Arial, Sans-serif;}
+/************/
+/*Global*/
+html,body {font-family: Helvetica, Arial, Sans-serif;background: #aaa;}
+section { margin-bottom: 50px;background:white;}
 label {display:block;clear:both;}
 .copy-text {
     border: 1px solid black;
     font-family:monospace;
+    padding:15px;
+    color:darkBlue;
+    background: #eee
 }
-/************/
-/*Global*/
+
 .col-md-15 {
     width: 62.5%;
 }
@@ -37,5 +41,5 @@ input, input[type=text] {
 
 /************/
 #Photo-Left-w-text {
-    
+
 }

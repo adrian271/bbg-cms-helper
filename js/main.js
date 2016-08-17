@@ -17,7 +17,6 @@ $(document).ready(function(){
     });
     $('section').each(function(){
         var output = templateEng($(this));
-        //console.log(output)
         $(this).find('.copy-text').text(output);
         $(this).find('.live-example').html(output);
     });
@@ -32,17 +31,25 @@ $(document).ready(function(){
 
 
 
-    //Fill with sample dummydata
-    var counter = 0
-    $('#Photo-Left-w-text input').each(function(){
-        $(this).val(dummy[counter]);
-        console.log(dummy[counter]);
-        counter++;
+    // //Fill with sample Filler Data
+    // var counter = 0
+    // $('#Photo-Left-w-text input').each(function(){
+    //     $(this).val(fillerData[counter]);
+    //     console.log(fillerData[counter]);
+    //     counter++;
+    // });
+
+    $('section').each(function(){
+      var id = $(this).attr('id');
+      var dataCollection = fillerData[id];
+      $(this).find('label').each(function(){
+        var label = $(this).text();
+        $(this).find('input').val(dataCollection[label]);
+      });
     });
 
     $('section').each(function(){
         var output = templateEng($(this));
-        console.log(output)
         $(this).find('.copy-text').text(output);
         $(this).find('.live-example').html(output);
     });

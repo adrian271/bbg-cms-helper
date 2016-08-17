@@ -2,7 +2,8 @@
 <html>
 <head>
     <title>BBG CMS Helper</title>
-    <link rel="stylesheet" href="css/shopping.css" />
+    <!-- <link rel="stylesheet" href="css/shopping.css" /> -->
+    <link rel="stylesheet" href="http://us.billabong.ns-qa.sandbox.netsuitestaging.com/c.340431_SB4/b2c-bbg-us/css/shopping.css" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/dummydata.js"></script>
@@ -16,7 +17,7 @@
         <label>image</label>
         <div class="copy-text"></div>
         <div class="live-example"></div>
-        <template>   
+        <template>
             <a href="#"><h1>{{Title}}</h1></a>
             <h2>{{Subtitle}}</h2>
             <textarea style="background:url({{image}});color:white;width:900px;height:600px;" />{{body}}</textarea>
@@ -53,6 +54,60 @@
                     </div>
                 </div>
             </div>
+        </template>
+    </section>
+    <!--Carousel -->
+    <section id="Hero-Carousel">
+        <h1>Hero Carousel</h1>
+        <label>TextHeading</label>
+        <label>SubTitle</label>
+        <div class="live-example"></div>
+        <div class="copy-text"></div>
+        <template>
+          <div class="gender-slider-container-wrapper force-full-width-mobile-tablet">
+              <div class="gender-slider-container">
+                  <ul class="gender-slider gender-featured-entry" data-hero-slider>
+                      <li class="gender-slide">
+                          <img class="gender-featured-entry-image" src="http://us.billabong.ns-qa.sandbox.netsuitestaging.com/images/billabong/Josh_Enslin_Sets_Guinness_World_Record_Mens_011216_1700x1130.jpg" alt="{{TextHeading}}" />
+                          <div class="gender-featured-entry-content-wrapper container">
+                              <div class="gender-featured-entry-content">
+                                  <div class="slide-anim-heading">
+                                      <h2>{{TextHeading}}</h2>
+                                  </div>
+                                  <div class="slide-anim-sub-title">
+                                      <p>{{SubTitle}}</p>
+                                  </div>
+                                  <div class="slide-anim-cta"><a href="/#" data-touchpoint="home" data-hashtag="#/#">{{translate 'Call To Action Label' }}</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="gender-slide">
+                          <img class="gender-featured-entry-image" src="http://us.billabong.ns-qa.sandbox.netsuitestaging.com/images/billabong/Josh_Enslin_Sets_Guinness_World_Record_Session_Surf_Mens_011216_1700x1130.jpg" alt="{{translate 'Text Heading 2' }}" />
+                          <div class="gender-featured-entry-content-wrapper container">
+                              <div class="gender-featured-entry-content">
+                                  <div class="slide-anim-heading">
+                                      <h2>{{translate 'Text Heading 2' }}</h2>
+                                  </div>
+                                  <div class="slide-anim-sub-title">
+                                      <p>{{translate 'Carousel Sub-Title 2' }}</p>
+                                  </div>
+                                  <div class="slide-anim-cta"><a href="/#" data-touchpoint="home" data-hashtag="#/#">{{translate 'Call To Action Label 2' }}</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+                  <div class="custom-bx-slider-arrow-prev">
+                      <img src="http://us.billabong.ns-qa.sandbox.netsuitestaging.com/c.340431_SB4/b2c-bbg-us/img/line-arrow-left.svg" />
+                  </div>
+                  <div class="custom-bx-slider-shaddow-prev"></div>
+                  <div class="custom-bx-slider-arrow-next">
+                      <img src="http://us.billabong.ns-qa.sandbox.netsuitestaging.comr/c.340431_SB4/b2c-bbg-us/img/line-arrow-right.svg" />
+                  </div>
+                  <div class="custom-bx-slider-shaddow-next"></div>
+              </div>
+          </div>
         </template>
     </section>
 </body>
